@@ -1,5 +1,9 @@
 # Passive Investing Backtests
 
+Development repo for finance fact checking (FinFacts?)
+
+The goal is to create a parameterized model that can simulate certain (passive) investment strategies on historical data.
+
 ## Virtual Env Setup
 
 > [!NOTE]
