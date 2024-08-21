@@ -1,2 +1,8 @@
 # Virtual Env
 venv/
+
+# Raw Data Sources
+data/
+
+# Python
+__pycache__/
