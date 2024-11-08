@@ -1,5 +1,5 @@
 {
-    "Aandelen": {
+    "Stock": {
         "AN8068571086": {
             "Name": "Schlumberger Limited",
             "Ticker": "SLB"
@@ -1237,7 +1237,7 @@
             "Ticker": "WDC"
         }
     },
-    "Beleggingsfondsen": {
+    "Fund": {
         "BE0940002729": {
             "Name": "DPAM B - Equities Europe Sustainable B EUR Cap",
             "Ticker": "/"
