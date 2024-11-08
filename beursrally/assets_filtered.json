@@ -1,0 +1,1516 @@
+{
+    "Aandelen": {
+        "AN8068571086": {
+            "Name": "Schlumberger Limited",
+            "Ticker": "SLB"
+        },
+        "BE0003008019": {
+            "Name": "BQUE NAT. BELGIQUE",
+            "Ticker": "BNB"
+        },
+        "BE0003470755": {
+            "Name": "SOLVAY",
+            "Ticker": "SOLB"
+        },
+        "BE0003555639": {
+            "Name": "TESSENDERLO",
+            "Ticker": "TESB"
+        },
+        "BE0003565737": {
+            "Name": "KBC",
+            "Ticker": "KBC"
+        },
+        "BE0003573814": {
+            "Name": "WHATS COOKING GP",
+            "Ticker": "TERB"
+        },
+        "BE0003592038": {
+            "Name": "CIE BOIS SAUVAGE",
+            "Ticker": "COMB"
+        },
+        "BE0003593044": {
+            "Name": "COFINIMMO",
+            "Ticker": "COFB"
+        },
+        "BE0003599108": {
+            "Name": "IMMOBEL",
+            "Ticker": "IMMO"
+        },
+        "BE0003604155": {
+            "Name": "LOTUS BAKERIES",
+            "Ticker": "LOTB"
+        },
+        "BE0003656676": {
+            "Name": "RECTICEL",
+            "Ticker": "RECT"
+        },
+        "BE0003699130": {
+            "Name": "GIMV",
+            "Ticker": "GIMB"
+        },
+        "BE0003717312": {
+            "Name": "SOFINA",
+            "Ticker": "SOF"
+        },
+        "BE0003720340": {
+            "Name": "RETAIL ESTATES",
+            "Ticker": "RET"
+        },
+        "BE0003724383": {
+            "Name": "WERELDHAVE BELGIUM",
+            "Ticker": "WEHB"
+        },
+        "BE0003730448": {
+            "Name": "QUESTFOR GR PRICAF",
+            "Ticker": "QFG"
+        },
+        "BE0003734481": {
+            "Name": "WAREHOUSES ESTATES",
+            "Ticker": "WEB"
+        },
+        "BE0003735496": {
+            "Name": "ORANGE BELGIUM",
+            "Ticker": "OBEL"
+        },
+        "BE0003739530": {
+            "Name": "UCB",
+            "Ticker": "UCB"
+        },
+        "BE0003741551": {
+            "Name": "ROULARTA",
+            "Ticker": "ROU"
+        },
+        "BE0003754687": {
+            "Name": "VASTNED BELGIUM",
+            "Ticker": "VASTB"
+        },
+        "BE0003755692": {
+            "Name": "AGFA GEVAERT",
+            "Ticker": "AGFB"
+        },
+        "BE0003764785": {
+            "Name": "ACKERMANS V.HAAREN",
+            "Ticker": "ACKB"
+        },
+        "BE0003765790": {
+            "Name": "GREENYARD",
+            "Ticker": "GREEN"
+        },
+        "BE0003766806": {
+            "Name": "IBA",
+            "Ticker": "IBAB"
+        },
+        "BE0003770840": {
+            "Name": "NEXTENSA",
+            "Ticker": "NEXTA"
+        },
+        "BE0003789063": {
+            "Name": "DECEUNINCK",
+            "Ticker": "DECB"
+        },
+        "BE0003797140": {
+            "Name": "GBL",
+            "Ticker": "GBLB"
+        },
+        "BE0003808251": {
+            "Name": "EXMAR",
+            "Ticker": "EXM"
+        },
+        "BE0003810273": {
+            "Name": "PROXIMUS",
+            "Ticker": "PROX"
+        },
+        "BE0003816338": {
+            "Name": "CMB.TECH",
+            "Ticker": "EURN"
+        },
+        "BE0003818359": {
+            "Name": "GALAPAGOS",
+            "Ticker": "GLPG"
+        },
+        "BE0003820371": {
+            "Name": "EVS BROADC.EQUIPM.",
+            "Ticker": "EVS"
+        },
+        "BE0003822393": {
+            "Name": "ELIA GROUP",
+            "Ticker": "ELI"
+        },
+        "BE0003823409": {
+            "Name": "TUBIZE FIN",
+            "Ticker": "TUB"
+        },
+        "BE0003837540": {
+            "Name": "ATENOR",
+            "Ticker": "ATEB"
+        },
+        "BE0003839561": {
+            "Name": "VAN DE VELDE",
+            "Ticker": "VAN"
+        },
+        "BE0003851681": {
+            "Name": "AEDIFICA",
+            "Ticker": "AED"
+        },
+        "BE0003853703": {
+            "Name": "MONTEA",
+            "Ticker": "MONT"
+        },
+        "BE0003856730": {
+            "Name": "ASCENCIO",
+            "Ticker": "ASC"
+        },
+        "BE0003858751": {
+            "Name": "JENSEN GROUP",
+            "Ticker": "JEN"
+        },
+        "BE0003867844": {
+            "Name": "KBC ANCORA",
+            "Ticker": "KBCA"
+        },
+        "BE0003874915": {
+            "Name": "FAGRON",
+            "Ticker": "FAGR"
+        },
+        "BE0003878957": {
+            "Name": "VGP",
+            "Ticker": "VGP"
+        },
+        "BE0003883031": {
+            "Name": "CFE",
+            "Ticker": "CFEB"
+        },
+        "BE0003898187": {
+            "Name": "SIPEF",
+            "Ticker": "SIP"
+        },
+        "BE0165385973": {
+            "Name": "MELEXIS",
+            "Ticker": "MELE"
+        },
+        "BE0974256852": {
+            "Name": "COLRUYT",
+            "Ticker": "COLR"
+        },
+        "BE0974258874": {
+            "Name": "BEKAERT",
+            "Ticker": "BEKB"
+        },
+        "BE0974259880": {
+            "Name": "DIETEREN GROUP",
+            "Ticker": "DIE"
+        },
+        "BE0974263924": {
+            "Name": "TEXAF",
+            "Ticker": "TEXF"
+        },
+        "BE0974264930": {
+            "Name": "AGEAS",
+            "Ticker": "AGS"
+        },
+        "BE0974265945": {
+            "Name": "FLUXYS BELGIUM D",
+            "Ticker": "FLUX"
+        },
+        "BE0974268972": {
+            "Name": "BPOST",
+            "Ticker": "BPOST"
+        },
+        "BE0974272040": {
+            "Name": "QRF",
+            "Ticker": "QRF"
+        },
+        "BE0974273055": {
+            "Name": "CARE PROPERTY INV.",
+            "Ticker": "CPINV"
+        },
+        "BE0974274061": {
+            "Name": "KINEPOLIS GROUP",
+            "Ticker": "KIN"
+        },
+        "BE0974276082": {
+            "Name": "ONTEX GROUP",
+            "Ticker": "ONTEX"
+        },
+        "BE0974282148": {
+            "Name": "TINC",
+            "Ticker": "TINC"
+        },
+        "BE0974288202": {
+            "Name": "XIOR",
+            "Ticker": "XIOR"
+        },
+        "BE0974293251": {
+            "Name": "AB INBEV",
+            "Ticker": "ABI"
+        },
+        "BE0974310428": {
+            "Name": "X FAB",
+            "Ticker": "XFAB"
+        },
+        "BE0974313455": {
+            "Name": "ECONOCOM GROUP",
+            "Ticker": "ECONB"
+        },
+        "BE0974320526": {
+            "Name": "UMICORE",
+            "Ticker": "UMI"
+        },
+        "BE0974323553": {
+            "Name": "SMARTPHOTO GROUP",
+            "Ticker": "SMAR"
+        },
+        "BE0974349814": {
+            "Name": "WDP",
+            "Ticker": "WDP"
+        },
+        "BE0974358906": {
+            "Name": "NYXOAH",
+            "Ticker": "NYXH"
+        },
+        "BE0974362940": {
+            "Name": "BARCO",
+            "Ticker": "BAR"
+        },
+        "BE0974363955": {
+            "Name": "HYLORIS",
+            "Ticker": "HYL"
+        },
+        "BE0974380124": {
+            "Name": "EKOPAK",
+            "Ticker": "EKOP"
+        },
+        "BE0974386188": {
+            "Name": "BIOTALYS",
+            "Ticker": "BTLS"
+        },
+        "BE0974400328": {
+            "Name": "AZELIS GROUP",
+            "Ticker": "AZE"
+        },
+        "BE0974409410": {
+            "Name": "HOME INVEST BE.",
+            "Ticker": "HOMI"
+        },
+        "BE0974413453": {
+            "Name": "DEME GROUP",
+            "Ticker": "DEME"
+        },
+        "BE0974464977": {
+            "Name": "SYENSQO",
+            "Ticker": "SYENS"
+        },
+        "BMG0112X1056": {
+            "Name": "AEGON",
+            "Ticker": "AGN"
+        },
+        "BMG3602E1084": {
+            "Name": "FLOW TRADERS",
+            "Ticker": "FLOW"
+        },
+        "BMG455841020": {
+            "Name": "HAL TRUST",
+            "Ticker": "HAL"
+        },
+        "BMG611881274": {
+            "Name": "Liberty Global Ltd",
+            "Ticker": "LBTYK"
+        },
+        "BMG667211046": {
+            "Name": "Norwegian Cruise Line Holdings Ltd",
+            "Ticker": "NCLH"
+        },
+        "CA0679011084": {
+            "Name": "Barrick Gold Corp",
+            "Ticker": "GOLD"
+        },
+        "CH1216478797": {
+            "Name": "DSM FIRMENICH AG",
+            "Ticker": "DSFIR"
+        },
+        "FR0000038606": {
+            "Name": "MANITOU BF",
+            "Ticker": "MTU"
+        },
+        "FR0000039109": {
+            "Name": "SECHE ENVIRONNEM.",
+            "Ticker": "SCHP"
+        },
+        "FR0000039299": {
+            "Name": "BOLLORE",
+            "Ticker": "BOL"
+        },
+        "FR0000044448": {
+            "Name": "NEXANS",
+            "Ticker": "NEX"
+        },
+        "FR0000045072": {
+            "Name": "CREDIT AGRICOLE",
+            "Ticker": "ACA"
+        },
+        "FR0000051807": {
+            "Name": "Teleperformance Se",
+            "Ticker": "TEP"
+        },
+        "FR0000052292": {
+            "Name": "HERMES INTL",
+            "Ticker": "RMS"
+        },
+        "FR0000053324": {
+            "Name": "ALPES (COMPAGNIE)",
+            "Ticker": "CDA"
+        },
+        "FR0000054470": {
+            "Name": "UBISOFT ENTERTAIN",
+            "Ticker": "UBI"
+        },
+        "FR0000062796": {
+            "Name": "VRANKEN POMMERY",
+            "Ticker": "VRAP"
+        },
+        "FR0000063935": {
+            "Name": "BONDUELLE",
+            "Ticker": "BON"
+        },
+        "FR0000064784": {
+            "Name": "PEUGEOT INVEST",
+            "Ticker": "PEUG"
+        },
+        "FR0000073272": {
+            "Name": "SAFRAN",
+            "Ticker": "SAF"
+        },
+        "FR0000120073": {
+            "Name": "AIR LIQUIDE",
+            "Ticker": "AI"
+        },
+        "FR0000120172": {
+            "Name": "CARREFOUR",
+            "Ticker": "CA"
+        },
+        "FR0000120271": {
+            "Name": "TOTALENERGIES",
+            "Ticker": "TTE"
+        },
+        "FR0000120321": {
+            "Name": "LOREAL",
+            "Ticker": "OR"
+        },
+        "FR0000120404": {
+            "Name": "ACCOR",
+            "Ticker": "AC"
+        },
+        "FR0000120503": {
+            "Name": "BOUYGUES",
+            "Ticker": "EN"
+        },
+        "FR0000120578": {
+            "Name": "SANOFI",
+            "Ticker": "SAN"
+        },
+        "FR0000120628": {
+            "Name": "AXA",
+            "Ticker": "CS"
+        },
+        "FR0000120644": {
+            "Name": "DANONE",
+            "Ticker": "BN"
+        },
+        "FR0000120693": {
+            "Name": "PERNOD RICARD",
+            "Ticker": "RI"
+        },
+        "FR0000120859": {
+            "Name": "IMERYS",
+            "Ticker": "NK"
+        },
+        "FR0000120966": {
+            "Name": "BIC",
+            "Ticker": "BB"
+        },
+        "FR0000121014": {
+            "Name": "LVMH",
+            "Ticker": "MC"
+        },
+        "FR0000121121": {
+            "Name": "Eurazeo",
+            "Ticker": "RF"
+        },
+        "FR0000121204": {
+            "Name": "WENDEL",
+            "Ticker": "MF"
+        },
+        "FR0000121220": {
+            "Name": "SODEXO",
+            "Ticker": "SW"
+        },
+        "FR0000121329": {
+            "Name": "THALES",
+            "Ticker": "HO"
+        },
+        "FR0000121485": {
+            "Name": "KERING",
+            "Ticker": "KER"
+        },
+        "FR0000121667": {
+            "Name": "ESSILORLUXOTTICA",
+            "Ticker": "EL"
+        },
+        "FR0000121709": {
+            "Name": "S.E.B.",
+            "Ticker": "SK"
+        },
+        "FR0000121964": {
+            "Name": "KLEPIERRE",
+            "Ticker": "LI"
+        },
+        "FR0000121972": {
+            "Name": "SCHNEIDER ELECTRIC",
+            "Ticker": "SU"
+        },
+        "FR0000124141": {
+            "Name": "VEOLIA ENVIRON.",
+            "Ticker": "VIE"
+        },
+        "FR0000124570": {
+            "Name": "OPMOBILITY",
+            "Ticker": "POM"
+        },
+        "FR0000125007": {
+            "Name": "SAINT GOBAIN",
+            "Ticker": "SGO"
+        },
+        "FR0000125338": {
+            "Name": "CAPGEMINI",
+            "Ticker": "CAP"
+        },
+        "FR0000125486": {
+            "Name": "VINCI",
+            "Ticker": "DG"
+        },
+        "FR0000130395": {
+            "Name": "REMY COINTREAU",
+            "Ticker": "RCO"
+        },
+        "FR0000130577": {
+            "Name": "PUBLICIS GROUPE SA",
+            "Ticker": "PUB"
+        },
+        "FR0000130809": {
+            "Name": "SOCIETE GENERALE",
+            "Ticker": "GLE"
+        },
+        "FR0000131104": {
+            "Name": "BNP PARIBAS ACT.A",
+            "Ticker": "BNP"
+        },
+        "FR0000131906": {
+            "Name": "RENAULT",
+            "Ticker": "RNO"
+        },
+        "FR0000133308": {
+            "Name": "ORANGE",
+            "Ticker": "ORA"
+        },
+        "FR0004163111": {
+            "Name": "GENFIT",
+            "Ticker": "GNFT"
+        },
+        "FR0005691656": {
+            "Name": "TRIGANO",
+            "Ticker": "TRI"
+        },
+        "FR0010208488": {
+            "Name": "ENGIE",
+            "Ticker": "ENGI"
+        },
+        "FR0010220475": {
+            "Name": "ALSTOM",
+            "Ticker": "ALO"
+        },
+        "FR0010307819": {
+            "Name": "LEGRAND",
+            "Ticker": "LR"
+        },
+        "FR0010313833": {
+            "Name": "ARKEMA",
+            "Ticker": "AKE"
+        },
+        "FR0010386334": {
+            "Name": "CLARIANE",
+            "Ticker": "CLARI"
+        },
+        "FR0010908533": {
+            "Name": "EDENRED",
+            "Ticker": "EDEN"
+        },
+        "FR0011981968": {
+            "Name": "WORLDLINE",
+            "Ticker": "WLN"
+        },
+        "FR0013176526": {
+            "Name": "VALEO",
+            "Ticker": "FR"
+        },
+        "FR0013280286": {
+            "Name": "BIOMERIEUX",
+            "Ticker": "BIM"
+        },
+        "FR0013326246": {
+            "Name": "UNIBAIL RODAMCO WE",
+            "Ticker": "URW"
+        },
+        "FR0013447729": {
+            "Name": "VERALLIA",
+            "Ticker": "VRLA"
+        },
+        "FR0013506730": {
+            "Name": "VALLOUREC",
+            "Ticker": "VK"
+        },
+        "FR0014000MR3": {
+            "Name": "EUROFINS SCIENT.",
+            "Ticker": "ERF"
+        },
+        "FR0014003TT8": {
+            "Name": "DASSAULT SYSTEMES",
+            "Ticker": "DSY"
+        },
+        "FR001400AJ45": {
+            "Name": "MICHELIN",
+            "Ticker": "ML"
+        },
+        "FR001400J770": {
+            "Name": "AIR FRANCE KLM",
+            "Ticker": "AF"
+        },
+        "GB00B10RZP78": {
+            "Name": "UNILEVER",
+            "Ticker": "UNA"
+        },
+        "GB00B2B0DG97": {
+            "Name": "RELX",
+            "Ticker": "REN"
+        },
+        "GB00BNTJ3546": {
+            "Name": "ALLFUNDS GROUP",
+            "Ticker": "ALLFG"
+        },
+        "GB00BP6MXD84": {
+            "Name": "SHELL PLC",
+            "Ticker": "SHELL"
+        },
+        "GG00BQZCBZ44": {
+            "Name": "SHURGARD",
+            "Ticker": "SHUR"
+        },
+        "IE00BKVD2N49": {
+            "Name": "Seagate Technology Holdings PLC",
+            "Ticker": "STX"
+        },
+        "JE00BS44BN30": {
+            "Name": "Birkenstock Holding plc",
+            "Ticker": "BIRK"
+        },
+        "LU0569974404": {
+            "Name": "APERAM",
+            "Ticker": "APAM"
+        },
+        "LU1068091351": {
+            "Name": "BREDERODE",
+            "Ticker": "BREB"
+        },
+        "LU1598757687": {
+            "Name": "ARCELORMITTAL SA",
+            "Ticker": "MT"
+        },
+        "LU1789205884": {
+            "Name": "B&S Group",
+            "Ticker": "BSGR"
+        },
+        "LU2290522684": {
+            "Name": "INPOST",
+            "Ticker": "INPST"
+        },
+        "NL0000009082": {
+            "Name": "KPN KON",
+            "Ticker": "KPN"
+        },
+        "NL0000009165": {
+            "Name": "HEINEKEN",
+            "Ticker": "HEIA"
+        },
+        "NL0000009538": {
+            "Name": "PHILIPS KON",
+            "Ticker": "PHIA"
+        },
+        "NL0000226223": {
+            "Name": "STMICROELECTRONICS",
+            "Ticker": "STMPA"
+        },
+        "NL0000235190": {
+            "Name": "AIRBUS",
+            "Ticker": "AIR"
+        },
+        "NL0000288918": {
+            "Name": "VASTNED",
+            "Ticker": "VASTN"
+        },
+        "NL0000289213": {
+            "Name": "WERELDHAVE",
+            "Ticker": "WHA"
+        },
+        "NL0000302636": {
+            "Name": "V LANSCHOT KEMPEN",
+            "Ticker": "VLK"
+        },
+        "NL0000313286": {
+            "Name": "ACOMO",
+            "Ticker": "ACOMO"
+        },
+        "NL0000334118": {
+            "Name": "ASM INTERNATIONAL",
+            "Ticker": "ASM"
+        },
+        "NL0000337319": {
+            "Name": "BAM GROEP KON",
+            "Ticker": "BAMNB"
+        },
+        "NL0000360618": {
+            "Name": "SBM OFFSHORE",
+            "Ticker": "SBMO"
+        },
+        "NL0000379121": {
+            "Name": "RANDSTAD NV",
+            "Ticker": "RAND"
+        },
+        "NL0000395903": {
+            "Name": "WOLTERS KLUWER",
+            "Ticker": "WKL"
+        },
+        "NL0000817179": {
+            "Name": "SLIGRO FOOD GROUP",
+            "Ticker": "SLIGR"
+        },
+        "NL0000852523": {
+            "Name": "TKH GROUP",
+            "Ticker": "TWEKA"
+        },
+        "NL0000852531": {
+            "Name": "KENDRION",
+            "Ticker": "KENDR"
+        },
+        "NL0000852564": {
+            "Name": "AALBERTS NV",
+            "Ticker": "AALB"
+        },
+        "NL0000888691": {
+            "Name": "AMG",
+            "Ticker": "AMG"
+        },
+        "NL0006237562": {
+            "Name": "ARCADIS",
+            "Ticker": "ARCAD"
+        },
+        "NL0006294274": {
+            "Name": "EURONEXT",
+            "Ticker": "ENX"
+        },
+        "NL0009269109": {
+            "Name": "HEIJMANS KON",
+            "Ticker": "HEIJM"
+        },
+        "NL0009432491": {
+            "Name": "VOPAK",
+            "Ticker": "VPK"
+        },
+        "NL0009739416": {
+            "Name": "POSTNL",
+            "Ticker": "PNL"
+        },
+        "NL0010273215": {
+            "Name": "ASML HOLDING",
+            "Ticker": "ASML"
+        },
+        "NL0010558797": {
+            "Name": "OCI",
+            "Ticker": "OCI"
+        },
+        "NL0010583399": {
+            "Name": "CORBION",
+            "Ticker": "CRBN"
+        },
+        "NL0010773842": {
+            "Name": "NN GROUP",
+            "Ticker": "NN"
+        },
+        "NL0010776944": {
+            "Name": "BRUNEL INTERNAT",
+            "Ticker": "BRNL"
+        },
+        "NL0010801007": {
+            "Name": "IMCD",
+            "Ticker": "IMCD"
+        },
+        "NL0010832176": {
+            "Name": "ARGENX SE",
+            "Ticker": "ARGX"
+        },
+        "NL0011540547": {
+            "Name": "ABN AMRO BANK N.V.",
+            "Ticker": "ABN"
+        },
+        "NL0011660485": {
+            "Name": "SIF HOLDING",
+            "Ticker": "SIFG"
+        },
+        "NL0011794037": {
+            "Name": "AHOLD DEL",
+            "Ticker": "AD"
+        },
+        "NL0011821202": {
+            "Name": "ING GROEP N.V.",
+            "Ticker": "INGA"
+        },
+        "NL0011821392": {
+            "Name": "SIGNIFY NV",
+            "Ticker": "LIGHT"
+        },
+        "NL0011832811": {
+            "Name": "FORFARMERS",
+            "Ticker": "FFARM"
+        },
+        "NL0011872643": {
+            "Name": "ASR NEDERLAND",
+            "Ticker": "ASRNL"
+        },
+        "NL0011872650": {
+            "Name": "BASIC FIT",
+            "Ticker": "BFIT"
+        },
+        "NL0012015705": {
+            "Name": "JUST EAT TAKEAWAY",
+            "Ticker": "TKWY"
+        },
+        "NL0012047823": {
+            "Name": "AVANTIUM",
+            "Ticker": "AVTX"
+        },
+        "NL0012059018": {
+            "Name": "EXOR NV",
+            "Ticker": "EXO"
+        },
+        "NL0012365084": {
+            "Name": "NSI N.V.",
+            "Ticker": "NSI"
+        },
+        "NL0012747059": {
+            "Name": "CM.COM",
+            "Ticker": "CMCOM"
+        },
+        "NL0012817175": {
+            "Name": "ALFEN",
+            "Ticker": "ALFEN"
+        },
+        "NL0012866412": {
+            "Name": "BE SEMICONDUCTOR",
+            "Ticker": "BESI"
+        },
+        "NL0012969182": {
+            "Name": "ADYEN",
+            "Ticker": "ADYEN"
+        },
+        "NL0013267909": {
+            "Name": "AKZO NOBEL",
+            "Ticker": "AKZA"
+        },
+        "NL0013332471": {
+            "Name": "TOMTOM",
+            "Ticker": "TOM2"
+        },
+        "NL0013654783": {
+            "Name": "PROSUS",
+            "Ticker": "PRX"
+        },
+        "NL0013654809": {
+            "Name": "FASTNED",
+            "Ticker": "FAST"
+        },
+        "NL0014332678": {
+            "Name": "JDE PEETS",
+            "Ticker": "JDEP"
+        },
+        "NL00150001Q9": {
+            "Name": "STELLANTIS NV",
+            "Ticker": "STLAP"
+        },
+        "NL00150002Q7": {
+            "Name": "VIVORYON",
+            "Ticker": "VVY"
+        },
+        "NL00150003E1": {
+            "Name": "FUGRO",
+            "Ticker": "FUR"
+        },
+        "NL00150006R6": {
+            "Name": "CTP",
+            "Ticker": "CTPNV"
+        },
+        "NL0015000CZ2": {
+            "Name": "EBUSCO HOLDING",
+            "Ticker": "EBUS"
+        },
+        "NL0015000HT4": {
+            "Name": "ONWARD MEDICAL",
+            "Ticker": "ONWD"
+        },
+        "NL0015000IY2": {
+            "Name": "UMG",
+            "Ticker": "UMG"
+        },
+        "NL0015000K93": {
+            "Name": "EUROCOMMERCIAL",
+            "Ticker": "ECMPA"
+        },
+        "PA1436583006": {
+            "Name": "Carnival Corp",
+            "Ticker": "CCL"
+        },
+        "US00206R1023": {
+            "Name": "AT&T",
+            "Ticker": "T"
+        },
+        "US0028241000": {
+            "Name": "Abbott Laboratories",
+            "Ticker": "ABT"
+        },
+        "US00287Y1091": {
+            "Name": "ABBVIE",
+            "Ticker": "ABBV"
+        },
+        "US00724F1012": {
+            "Name": "Adobe",
+            "Ticker": "ADBE"
+        },
+        "US0079031078": {
+            "Name": "Advanced Micro Devices",
+            "Ticker": "AMD"
+        },
+        "US0090661010": {
+            "Name": "Airbnb",
+            "Ticker": "ABNB"
+        },
+        "US01609W1027": {
+            "Name": "Alibaba Group Holding Limited",
+            "Ticker": "BABA"
+        },
+        "US02079K3059": {
+            "Name": "Alphabet",
+            "Ticker": "GOOGL"
+        },
+        "US0231351067": {
+            "Name": "Amazon.com",
+            "Ticker": "AMZN"
+        },
+        "US0258161092": {
+            "Name": "American Express Company",
+            "Ticker": "AXP"
+        },
+        "US0311621009": {
+            "Name": "Amgen",
+            "Ticker": "AMGN"
+        },
+        "US0378331005": {
+            "Name": "Apple",
+            "Ticker": "AAPL"
+        },
+        "US0420682058": {
+            "Name": "Arm Holdings plc",
+            "Ticker": "ARM"
+        },
+        "US0846707026": {
+            "Name": "Berkshire Hathaway",
+            "Ticker": "BRK.B"
+        },
+        "US08862E1091": {
+            "Name": "Beyond Meat",
+            "Ticker": "BYND"
+        },
+        "US09062X1037": {
+            "Name": "Biogen",
+            "Ticker": "BIIB"
+        },
+        "US0970231058": {
+            "Name": "Boeing Company",
+            "Ticker": "BA"
+        },
+        "US09857L1089": {
+            "Name": "Booking Holdings",
+            "Ticker": "BKNG"
+        },
+        "US11135F1012": {
+            "Name": "Broadcom Inc.",
+            "Ticker": "AVGO"
+        },
+        "US1491231015": {
+            "Name": "Caterpillar",
+            "Ticker": "CAT"
+        },
+        "US1667641005": {
+            "Name": "Chevron Corp",
+            "Ticker": "CVX"
+        },
+        "US17275R1023": {
+            "Name": "Cisco Systems",
+            "Ticker": "CSCO"
+        },
+        "US1729674242": {
+            "Name": "Citigroup",
+            "Ticker": "C"
+        },
+        "US1912161007": {
+            "Name": "Coca Cola Company",
+            "Ticker": "KO"
+        },
+        "US19260Q1076": {
+            "Name": "Coinbase Global",
+            "Ticker": "COIN"
+        },
+        "US1941621039": {
+            "Name": "Colgate Palmolive Company",
+            "Ticker": "CL"
+        },
+        "US20030N1019": {
+            "Name": "Comcast Corp",
+            "Ticker": "CMCSA"
+        },
+        "US2546871060": {
+            "Name": "Walt Disney Company",
+            "Ticker": "DIS"
+        },
+        "US2605571031": {
+            "Name": "Dow",
+            "Ticker": "DOW"
+        },
+        "US2786421030": {
+            "Name": "eBay",
+            "Ticker": "EBAY"
+        },
+        "US2855121099": {
+            "Name": "Electronic Arts",
+            "Ticker": "EA"
+        },
+        "US30231G1022": {
+            "Name": "Exxon Mobil Corp",
+            "Ticker": "XOM"
+        },
+        "US30303M1027": {
+            "Name": "Meta Platforms",
+            "Ticker": "META"
+        },
+        "US36467W1099": {
+            "Name": "GameStop Corp",
+            "Ticker": "GME"
+        },
+        "US3696043013": {
+            "Name": "GE Aerospace",
+            "Ticker": "GE"
+        },
+        "US37045V1008": {
+            "Name": "General Motors Company",
+            "Ticker": "GM"
+        },
+        "US3755581036": {
+            "Name": "Gilead Sciences",
+            "Ticker": "GILD"
+        },
+        "US38141G1040": {
+            "Name": "Goldman Sachs Group",
+            "Ticker": "GS"
+        },
+        "US4370761029": {
+            "Name": "Home Depot",
+            "Ticker": "HD"
+        },
+        "US4385161066": {
+            "Name": "Honeywell International",
+            "Ticker": "HON"
+        },
+        "US4581401001": {
+            "Name": "Intel Corp",
+            "Ticker": "INTC"
+        },
+        "US4592001014": {
+            "Name": "International Business Machines Corp",
+            "Ticker": "IBM"
+        },
+        "US46565G1040": {
+            "Name": "iTeos Therapeutics",
+            "Ticker": "ITOS"
+        },
+        "US46625H1005": {
+            "Name": "JPMorgan Chase & Co",
+            "Ticker": "JPM"
+        },
+        "US4781601046": {
+            "Name": "Johnson & Johnson",
+            "Ticker": "JNJ"
+        },
+        "US5007541064": {
+            "Name": "Kraft Heinz Company",
+            "Ticker": "KHC"
+        },
+        "US5324571083": {
+            "Name": "Eli Lilly & Co",
+            "Ticker": "LLY"
+        },
+        "US5494981039": {
+            "Name": "Lucid Group",
+            "Ticker": "LCID"
+        },
+        "US57636Q1040": {
+            "Name": "Mastercard",
+            "Ticker": "MA"
+        },
+        "US57667T1007": {
+            "Name": "Materialise NV",
+            "Ticker": "MTLS"
+        },
+        "US5801351017": {
+            "Name": "McDonalds Corp",
+            "Ticker": "MCD"
+        },
+        "US58933Y1055": {
+            "Name": "Merck & Co",
+            "Ticker": "MRK"
+        },
+        "US5949181045": {
+            "Name": "Microsoft Corp",
+            "Ticker": "MSFT"
+        },
+        "US5949724083": {
+            "Name": "MicroStrategy",
+            "Ticker": "MSTR"
+        },
+        "US60770K1079": {
+            "Name": "Moderna",
+            "Ticker": "MRNA"
+        },
+        "US6092071058": {
+            "Name": "Mondelez International",
+            "Ticker": "MDLZ"
+        },
+        "US61174X1090": {
+            "Name": "Monster Beverage Corp",
+            "Ticker": "MNST"
+        },
+        "US64110L1061": {
+            "Name": "Netflix",
+            "Ticker": "NFLX"
+        },
+        "US6516391066": {
+            "Name": "Newmont Corp",
+            "Ticker": "NEM"
+        },
+        "US6541061031": {
+            "Name": "Nike",
+            "Ticker": "NKE"
+        },
+        "US6549022043": {
+            "Name": "Nokia Corp",
+            "Ticker": "NOK"
+        },
+        "US6687711084": {
+            "Name": "Gen Digital",
+            "Ticker": "GEN"
+        },
+        "US67066G1040": {
+            "Name": "NVIDIA Corp",
+            "Ticker": "NVDA"
+        },
+        "US68287N1000": {
+            "Name": "OneSpan",
+            "Ticker": "OSPN"
+        },
+        "US68389X1054": {
+            "Name": "Oracle Corp",
+            "Ticker": "ORCL"
+        },
+        "US69608A1088": {
+            "Name": "Palantir Technologies",
+            "Ticker": "PLTR"
+        },
+        "US70450Y1038": {
+            "Name": "PayPal Holdings",
+            "Ticker": "PYPL"
+        },
+        "US7134481081": {
+            "Name": "PepsiCo",
+            "Ticker": "PEP"
+        },
+        "US7170811035": {
+            "Name": "Pfizer",
+            "Ticker": "PFE"
+        },
+        "US7181721090": {
+            "Name": "Philip Morris International",
+            "Ticker": "PM"
+        },
+        "US72352L1061": {
+            "Name": "Pinterest",
+            "Ticker": "PINS"
+        },
+        "US7427181091": {
+            "Name": "Procter & Gamble Company",
+            "Ticker": "PG"
+        },
+        "US7475251036": {
+            "Name": "QUALCOMM",
+            "Ticker": "QCOM"
+        },
+        "US75513E1010": {
+            "Name": "RTX Corp",
+            "Ticker": "RTX"
+        },
+        "US75886F1075": {
+            "Name": "Regeneron Pharmaceuticals",
+            "Ticker": "REGN"
+        },
+        "US79466L3024": {
+            "Name": "Salesforce",
+            "Ticker": "CRM"
+        },
+        "US83304A1060": {
+            "Name": "Snap",
+            "Ticker": "SNAP"
+        },
+        "US8447411088": {
+            "Name": "Southwest Airlines Co",
+            "Ticker": "LUV"
+        },
+        "US8552441094": {
+            "Name": "Starbucks Corp",
+            "Ticker": "SBUX"
+        },
+        "US88160R1014": {
+            "Name": "Tesla",
+            "Ticker": "TSLA"
+        },
+        "US8825081040": {
+            "Name": "Texas Instruments",
+            "Ticker": "TXN"
+        },
+        "US88579Y1010": {
+            "Name": "3 M Company",
+            "Ticker": "MMM"
+        },
+        "US89417E1091": {
+            "Name": "Travelers Companies",
+            "Ticker": "TRV"
+        },
+        "US90353T1007": {
+            "Name": "Uber Technologies",
+            "Ticker": "UBER"
+        },
+        "US91324P1021": {
+            "Name": "Unitedhealth Group",
+            "Ticker": "UNH"
+        },
+        "US92343V1044": {
+            "Name": "Verizon Communications",
+            "Ticker": "VZ"
+        },
+        "US92826C8394": {
+            "Name": "VISA",
+            "Ticker": "V"
+        },
+        "US9311421039": {
+            "Name": "Walmart",
+            "Ticker": "WMT"
+        },
+        "US9314271084": {
+            "Name": "Walgreens Boots Alliance",
+            "Ticker": "WBA"
+        },
+        "US9581021055": {
+            "Name": "Western Digital Corp",
+            "Ticker": "WDC"
+        }
+    },
+    "Beleggingsfondsen": {
+        "BE0940002729": {
+            "Name": "DPAM B - Equities Europe Sustainable B EUR Cap",
+            "Ticker": "/"
+        },
+        "IE0004766675": {
+            "Name": "Comgest Growth Europe EUR Acc",
+            "Ticker": "/"
+        },
+        "IE00B23S7K36": {
+            "Name": "BNY Mellon Brazil Equity Fund EUR A Acc",
+            "Ticker": "/"
+        },
+        "IE00B84J9L26": {
+            "Name": "PIMCO GIS Income Fund E Class EUR (Hedged) Accumulation",
+            "Ticker": "/"
+        },
+        "LU0093503497": {
+            "Name": "BlackRock Global Funds - ESG Multi-Asset Fund A2 EUR",
+            "Ticker": "/"
+        },
+        "LU0094557526": {
+            "Name": "MFS Meridian Funds - European Research Fund A1 EUR",
+            "Ticker": "/"
+        },
+        "LU0119195450": {
+            "Name": "Goldman Sachs Patrimonial Aggressive - P Cap EUR",
+            "Ticker": "/"
+        },
+        "LU0119195963": {
+            "Name": "Goldman Sachs Patrimonial Balanced - P Cap EUR",
+            "Ticker": "/"
+        },
+        "LU0119196938": {
+            "Name": "Goldman Sachs Patrimonial Defensive - P Cap EUR",
+            "Ticker": "/"
+        },
+        "LU0119216553": {
+            "Name": "Goldman Sachs Global Sustainable Equity - P Cap EUR",
+            "Ticker": "/"
+        },
+        "LU0133085943": {
+            "Name": "T. Rowe Price Funds SICAV - US Blue Chip Equity Fund A USD",
+            "Ticker": "/"
+        },
+        "LU0171310443": {
+            "Name": "BlackRock Global Funds - World Technology Fund A2",
+            "Ticker": "/"
+        },
+        "LU0184627536": {
+            "Name": "AXA World Funds - Switzerland Equity A Capitalisation EUR",
+            "Ticker": "/"
+        },
+        "LU0187076913": {
+            "Name": "Robeco Emerging Markets Equities D \u20ac",
+            "Ticker": "/"
+        },
+        "LU0187077481": {
+            "Name": "Robeco New World Financials D \u20ac",
+            "Ticker": "/"
+        },
+        "LU0187079347": {
+            "Name": "Robeco Global Consumer Trends D EUR",
+            "Ticker": "/"
+        },
+        "LU0197230542": {
+            "Name": "Fidelity Funds - India Focus Fund A-EUR",
+            "Ticker": "/"
+        },
+        "LU0211340665": {
+            "Name": "BL-Global Flexible EUR B EUR Acc",
+            "Ticker": "/"
+        },
+        "LU0213961682": {
+            "Name": "HSBC Global Investment Funds - Turkey Equity AC",
+            "Ticker": "/"
+        },
+        "LU0217576759": {
+            "Name": "JPMorgan Funds - Emerging Markets Equity Fund A (acc) - EUR",
+            "Ticker": "/"
+        },
+        "LU0224105477": {
+            "Name": "BlackRock Global Funds - Continental European Flexible Fund Class A2 EUR",
+            "Ticker": "/"
+        },
+        "LU0234681749": {
+            "Name": "Goldman Sachs Europe CORE Equity Portfolio Base Acc EUR",
+            "Ticker": "/"
+        },
+        "LU0243957239": {
+            "Name": "Invesco Funds - Invesco Pan European High Income Fund A Accumulation EUR",
+            "Ticker": "/"
+        },
+        "LU0248172537": {
+            "Name": "Schroder International Selection Fund Emerging Asia A Accumulation EUR",
+            "Ticker": "/"
+        },
+        "LU0255977455": {
+            "Name": "Pictet - Biotech P EUR",
+            "Ticker": "/"
+        },
+        "LU0260870158": {
+            "Name": "Franklin Technology Fund A (Acc) EUR",
+            "Ticker": "/"
+        },
+        "LU0261946445": {
+            "Name": "Fidelity Funds - Sustainable Asia Equity Fund A-Acc-EUR",
+            "Ticker": "/"
+        },
+        "LU0261959422": {
+            "Name": "Fidelity Funds - European Dynamic Growth Fund A-Acc-EUR",
+            "Ticker": "/"
+        },
+        "LU0302446645": {
+            "Name": "Schroder International Selection Fund Global Climate Change Equity A Accumulation EUR",
+            "Ticker": "/"
+        },
+        "LU0340559557": {
+            "Name": "Pictet-Timber P EUR",
+            "Ticker": "/"
+        },
+        "LU0345361124": {
+            "Name": "Fidelity Funds - Asia Pacific Opportunities Fund A-Acc-EUR",
+            "Ticker": "/"
+        },
+        "LU0352132285": {
+            "Name": "Franklin MENA Fund A(acc)EUR",
+            "Ticker": "/"
+        },
+        "LU0365775922": {
+            "Name": "Schroder International Selection Fund Greater China A Accumulation EUR",
+            "Ticker": "/"
+        },
+        "LU0441852612": {
+            "Name": "JPMorgan Funds - ASEAN Equity Fund A (acc) - EUR",
+            "Ticker": "/"
+        },
+        "LU0491217419": {
+            "Name": "Robeco Indian Equities D \u20ac",
+            "Ticker": "/"
+        },
+        "LU0496367763": {
+            "Name": "Franklin Gold & Precious Metals Fund A(acc)EUR",
+            "Ticker": "/"
+        },
+        "LU0504302356": {
+            "Name": "Triodos SICAV I - Triodos Impact Mixed Fund-Neutral EUR R Capitalisation",
+            "Ticker": "/"
+        },
+        "LU0572952280": {
+            "Name": "Janus Henderson Horizon Global Technology Leaders Fund A2 EUR",
+            "Ticker": "/"
+        },
+        "LU0690374615": {
+            "Name": "Fundsmith Equity Fund R EUR Acc",
+            "Ticker": "/"
+        },
+        "LU0705782398": {
+            "Name": "Robeco QI Global Conservative Equities D \u20ac",
+            "Ticker": "/"
+        },
+        "LU0740822621": {
+            "Name": "DWS Invest German Equities LC",
+            "Ticker": "/"
+        },
+        "LU0823421689": {
+            "Name": "BNP Paribas Funds Disruptive Technology Classic Capitalisation",
+            "Ticker": "/"
+        },
+        "LU0870553020": {
+            "Name": "DNCA Invest SRI Europe Growth Class A shares EUR",
+            "Ticker": "/"
+        },
+        "LU1165135440": {
+            "Name": "BNP Paribas Funds Aqua Classic Capitalisation",
+            "Ticker": "/"
+        },
+        "LU1261432659": {
+            "Name": "Fidelity Funds - World Fund A-Acc-EUR",
+            "Ticker": "/"
+        },
+        "LU1295551573": {
+            "Name": "Capital Group New Perspective Fund (LUX) B",
+            "Ticker": "/"
+        },
+        "LU1481179858": {
+            "Name": "Capital Group New World Fund (LUX) B",
+            "Ticker": "/"
+        },
+        "LU1670626446": {
+            "Name": "M&G (Lux) Japan Fund EUR A Acc",
+            "Ticker": "/"
+        },
+        "LU1864952335": {
+            "Name": "CT (Lux) - European Smaller Companies 1E (EUR Accumulation)",
+            "Ticker": "/"
+        }
+    },
+    "ETF": {
+        "FR0000021842": {
+            "Name": "Amundi BEL 20 UCITS ETF Dist",
+            "Ticker": ""
+        },
+        "FR0007054358": {
+            "Name": "Amundi EURO STOXX 50 II UCITS ETF Acc",
+            "Ticker": ""
+        },
+        "FR0010245514": {
+            "Name": "Amundi Japan TOPIX II UCITS ETF EUR Dist",
+            "Ticker": ""
+        },
+        "FR0010524777": {
+            "Name": "Amundi MSCI New Energy ESG Screened UCITS ETF Dist",
+            "Ticker": ""
+        },
+        "FR0013380607": {
+            "Name": "Amundi CAC 40 UCITS ETF Acc",
+            "Ticker": ""
+        },
+        "IE00B0M62Y33": {
+            "Name": "iShares AEX UCITS ETF EUR (Dist)",
+            "Ticker": ""
+        },
+        "IE00B0M63177": {
+            "Name": "iShares MSCI EM UCITS ETF USD (Dist)",
+            "Ticker": ""
+        },
+        "IE00B3XXRP09": {
+            "Name": "Vanguard S&P 500 UCITS ETF",
+            "Ticker": ""
+        },
+        "IE00B579F325": {
+            "Name": "Invesco Physical Gold ETC",
+            "Ticker": ""
+        },
+        "IE00B6R52036": {
+            "Name": "iShares Gold Producers UCITS ETF USD (Acc)",
+            "Ticker": ""
+        },
+        "IE00BFXR7892": {
+            "Name": "KraneShares CSI China Internet ETF USD",
+            "Ticker": ""
+        },
+        "IE00BLPK3577": {
+            "Name": "WisdomTree Cybersecurity UCITS ETF USD Acc",
+            "Ticker": ""
+        },
+        "IE00BMG6Z448": {
+            "Name": "iShares MSCI EM ex China UCITS ETF USD Acc",
+            "Ticker": ""
+        },
+        "IE00BQ70R696": {
+            "Name": "Invesco NASDAQ Biotech UCITS ETF",
+            "Ticker": ""
+        },
+        "JE00B78CGV99": {
+            "Name": "WisdomTree Brent Crude Oil",
+            "Ticker": ""
+        },
+        "LU1681038243": {
+            "Name": "Amundi Index Solutions - Amundi Nasdaq-100 ETF-C EUR",
+            "Ticker": ""
+        },
+        "LU1681045453": {
+            "Name": "Amundi Index Solutions - Amundi MSCI Emerging Markets UCITS ETF-C USD",
+            "Ticker": ""
+        },
+        "LU1781541179": {
+            "Name": "Amundi MSCI World V UCITS ETF Acc",
+            "Ticker": ""
+        },
+        "LU1861132840": {
+            "Name": "Amundi MSCI Robotics & AI ESG Screened UCITS ETF Acc",
+            "Ticker": ""
+        }
+    }
+}
