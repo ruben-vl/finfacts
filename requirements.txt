@@ -1,0 +1,4 @@
+yfinance~=0.2.48
+requests~=2.32.3
+requests-cache~=1.2.1
+pyrate-limiter~=2.10.0
