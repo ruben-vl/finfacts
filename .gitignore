@@ -14,5 +14,5 @@ yfinance.cache
 cache/
 
 # Beursrally
-passive-backtesting/beursrally/cookie.py
-passive-backtesting/beursrally/login_data.py
+cookie.py
+login_data.py
