@@ -1,6 +1,6 @@
 import json
 
-with open('/home/ruben/Projects/finfacts/beursrally/assets.json', 'r') as file:
+with open('/passive-backtesting/beursrally/assets.json', 'r') as file:
     data = json.load(file)
 
 assets = dict()
@@ -12,5 +12,5 @@ for item in data:
     for key in ["Name", "Ticker"]:
         assets[item["AsseType"]][item["ISIN"]][key] = item[key]
 
-with open('/home/ruben/Projects/finfacts/beursrally/assets_filtered.json', 'w+') as file:
+with open('/passive-backtesting/beursrally/assets_filtered.json', 'w+') as file:
     json.dump(assets, file)
