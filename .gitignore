@@ -12,3 +12,7 @@ yfinance.cache
 
 # Data Cache
 cache/
+
+# Beursrally
+passive-backtesting/beursrally/cookie.py
+passive-backtesting/beursrally/login_data.py
