@@ -15,4 +15,4 @@ cache/
 
 # Beursrally
 cookie.py
-login_data.py
+assets_raw.json
