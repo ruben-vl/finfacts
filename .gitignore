@@ -16,3 +16,6 @@ cache/
 # Beursrally
 cookie.py
 assets_raw.json
+
+# PyCharm
+.idea/
