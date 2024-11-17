@@ -37,7 +37,7 @@ class StockDataDB:
             self.cursor.execute(insert_metadata)
             self.connection.commit()
         except sqlite3.Error as _:
-            print(f"Metadata for {isin} already exists in the database")
+            print(f"-db- Metadata for {isin} already exists in the database")
 
     def _create_absolutes_table_if_not_exists(self):
         create_absolutes_table = '''
@@ -66,7 +66,7 @@ class StockDataDB:
             self.cursor.execute(insert_absolutes)
             self.connection.commit()
         except sqlite3.Error as _:
-            print(f"Absolutes data for {isin} on {date} already exists in the database")
+            print(f"-db- Absolutes data for {isin} on {date} already exists in the database")
 
     def _create_ratios_table_if_not_exists(self):
         create_ratios_table = '''
@@ -101,7 +101,7 @@ class StockDataDB:
             self.cursor.execute(insert_ratios)
             self.connection.commit()
         except sqlite3.Error as _:
-            print(f"Ratios data for {isin} on {date} already exists in the database")
+            print(f"-db- Ratios data for {isin} on {date} already exists in the database")
 
     def _create_events_table_if_not_exists(self):
         create_events_table = '''
@@ -123,4 +123,4 @@ class StockDataDB:
             self.cursor.execute(insert_events)
             self.connection.commit()
         except sqlite3.Error as _:
-            print(f"{event_type} events data for {isin} on {date} already exists in the database")
+            print(f"-db- {event_type} events data for {isin} on {date} already exists in the database")

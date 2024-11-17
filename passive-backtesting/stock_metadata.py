@@ -23,6 +23,7 @@ class StockMetadata:
         )
 
     def store_metadata(self, isin: str):
+        print(f"Storing metadata for {isin}")
         date_string = datetime.today().strftime("%d_%m_%Y")
         ticker = yf.Ticker(isin, session=self.session)
         database = StockDataDB()
@@ -58,9 +59,17 @@ class StockMetadata:
 
         ex_dividend_date = calendar['Ex-Dividend Date']
         database.add_event(isin=isin, date=ex_dividend_date.strftime("%d_%m_%Y"), event_type="Ex-Dividend")
+        dividend_date = calendar['Dividend Date']
+        database.add_event(isin=isin, date=dividend_date.strftime("%d_%m_%Y"), event_type="Dividend")
+
         earnings = calendar['Earnings Date']
         for date in earnings:
             database.add_event(isin=isin, date=date.strftime("%d_%m_%Y"), event_type="Earnings")
+
+        for key in calendar.keys():
+            if key not in {'Dividend Date', 'Ex-Dividend Date', 'Earnings Date', 'Earnings High', 'Earnings Low',
+                           'Earnings Average', 'Revenue High', 'Revenue Low', 'Revenue Average'}:
+                print(f"Unknown key in calendar: {key}")
 
     @classmethod
     def _filtered_info(cls, ticker: yf.ticker.Ticker) -> dict:
