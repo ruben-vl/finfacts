@@ -2,13 +2,14 @@ import sqlite3
 
 class StockDataDB:
 
-    def __init__(self):
+    def __init__(self, verbose=False):
         self.connection = sqlite3.connect('finfacts.db')
         self.cursor = self.connection.cursor()
         self._create_meta_table_if_not_exists()
         self._create_absolutes_table_if_not_exists()
         self._create_ratios_table_if_not_exists()
         self._create_events_table_if_not_exists()
+        self.verbose = verbose
 
     def _create_meta_table_if_not_exists(self):
         create_metadata_table = '''
@@ -35,7 +36,8 @@ class StockDataDB:
             self.cursor.execute(insert_metadata)
             self.connection.commit()
         except sqlite3.IntegrityError as _:
-            print(f"-db- Metadata for {isin} already exists in the database")
+            if self.verbose:
+                print(f"-db- Metadata for {isin} already exists in the database")
         except sqlite3.Error as err:
             print(err)
 
@@ -66,7 +68,8 @@ class StockDataDB:
             self.cursor.execute(insert_absolutes)
             self.connection.commit()
         except sqlite3.IntegrityError as _:
-            print(f"-db- Absolutes data for {isin} on {date} already exists in the database")
+            if self.verbose:
+                print(f"-db- Absolutes data for {isin} on {date} already exists in the database")
         except sqlite3.Error as err:
             print(err)
 
@@ -108,7 +111,8 @@ class StockDataDB:
             self.cursor.execute(insert_ratios)
             self.connection.commit()
         except sqlite3.IntegrityError as _:
-            print(f"-db- Ratios data for {isin} on {date} already exists in the database")
+            if self.verbose:
+                print(f"-db- Ratios data for {isin} on {date} already exists in the database")
         except sqlite3.Error as err:
             print(err)
 
@@ -132,6 +136,7 @@ class StockDataDB:
             self.cursor.execute(insert_events)
             self.connection.commit()
         except sqlite3.IntegrityError as _:
-            print(f"-db- {event_type} events data for {isin} on {date} already exists in the database")
+            if self.verbose:
+                print(f"-db- {event_type} events data for {isin} on {date} already exists in the database")
         except sqlite3.Error as err:
             print(err)
