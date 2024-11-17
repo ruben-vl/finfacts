@@ -30,6 +30,11 @@ class BeursrallyAssets:
         return data
 
     @classmethod
+    def save_and_filter_data(cls):
+        cls._get_assets_raw()
+        cls._filter_assets()
+
+    @classmethod
     def _get_assets_raw(cls):
         session = requests.Session()
         retry = Retry(connect=3, backoff_factor=0.5)
@@ -62,3 +67,7 @@ class BeursrallyAssets:
         with open('./assets.json', 'w+') as file:
             # noinspection PyTypeChecker
             json.dump(assets, file, indent=4)
+
+
+if __name__ == "__main__":
+    BeursrallyAssets.save_and_filter_data()
