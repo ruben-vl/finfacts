@@ -41,10 +41,10 @@ class StockMetadata:
 
         database.add_absolutes(isin=isin,
                                date=date_string,
-                               market_cap=info['marketCap'],
-                               enterprise_value=info['enterpriseValue'],
-                               average_volume=info['averageVolume'],
-                               average_volume_10days=info['averageVolume10days'])
+                               market_cap=info.get('marketCap',None),
+                               enterprise_value=info.get('enterpriseValue',None),
+                               average_volume=info.get('averageVolume',None),
+                               average_volume_10days=info.get('averageVolume10days',None))
 
         database.add_ratios(isin=isin,
                             date=date_string,

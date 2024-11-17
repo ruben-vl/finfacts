@@ -46,24 +46,27 @@ class StockDataDB:
             CREATE TABLE IF NOT EXISTS ABSOLUTES (
                 isin TEXT NOT NULL,
                 date TEXT NOT NULL,
-                marketCap INTEGER NOT NULL,
-                enterpriseValue INTEGER NOT NULL,
-                averageVolume INTEGER NOT NULL,
-                averageVolume10days INTEGER NOT NULL,
+                marketCap INTEGER,
+                enterpriseValue INTEGER,
+                averageVolume INTEGER,
+                averageVolume10days INTEGER,
                 PRIMARY KEY (isin, date)
             );'''
         self.cursor.execute(create_absolutes_table)
         self.connection.commit()
 
-    def add_absolutes(self, isin: str, date: str, market_cap: int,
-                      enterprise_value: int, average_volume: int,
-                      average_volume_10days: int):
+    def add_absolutes(self, isin: str, date: str, market_cap: int|None,
+                      enterprise_value: int|None, average_volume: int|None,
+                      average_volume_10days: int|None):
         insert_absolutes = f'''
             INSERT INTO ABSOLUTES
             (isin, date, marketCap, enterpriseValue, averageVolume, 
             averageVolume10days)
-            VALUES ('{isin}', '{date}', '{market_cap}', '{enterprise_value}', 
-            '{average_volume}', '{average_volume_10days}')'''
+            VALUES ('{isin}', '{date}', 
+            '{"NULL" if market_cap is None else market_cap}', 
+            '{"NULL" if enterprise_value is None else enterprise_value}', 
+            '{"NULL" if average_volume is None else average_volume}', 
+            '{"NULL" if average_volume_10days is None else average_volume_10days}')'''
         try:
             self.cursor.execute(insert_absolutes)
             self.connection.commit()
