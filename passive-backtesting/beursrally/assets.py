@@ -24,7 +24,7 @@ class BeursrallyAssets:
 
     @classmethod
     def _load_data(cls) -> dict[str, dict[str, dict[str, str]]]:
-        with open('./assets.json', 'r') as file:
+        with open('/home/ruben/Projects/finfacts/passive-backtesting/beursrally/assets.json', 'r') as file:
             data = json.load(file)
         return data
 
@@ -41,19 +41,19 @@ class BeursrallyAssets:
         session.mount('http://', adapter)
         session.mount('https://', adapter)
 
-        with open('./cookies.json', 'r') as file:
+        with open('/home/ruben/Projects/finfacts/passive-backtesting/beursrally/cookies.json', 'r') as file:
             cookies = json.load(file)
         data_response = session.get(cls.DATA_URL, cookies=cookies["Request Cookies"])
         if data_response.status_code != 200:
             print(f"Something went wrong: status code {data_response.status_code}\n{data_response.text}")
         else:
-            with open('./assets_raw.json', 'w+') as file:
+            with open('/home/ruben/Projects/finfacts/passive-backtesting/beursrally/assets_raw.json', 'w+') as file:
                 # noinspection PyTypeChecker
                 json.dump(data_response.json(), file, indent=4)
 
     @classmethod
     def _filter_assets(cls):
-        with open('./assets_raw.json', 'r') as file:
+        with open('/home/ruben/Projects/finfacts/passive-backtesting/beursrally/assets_raw.json', 'r') as file:
             data = json.load(file)
 
         assets = dict()
@@ -65,7 +65,7 @@ class BeursrallyAssets:
             for key in ["Name", "Ticker"]:
                 assets[item["AsseType"]][item["ISIN"]][key] = item[key]
 
-        with open('./assets.json', 'w+') as file:
+        with open('/home/ruben/Projects/finfacts/passive-backtesting/beursrally/assets.json', 'w+') as file:
             # noinspection PyTypeChecker
             json.dump(assets, file, indent=4)
 
