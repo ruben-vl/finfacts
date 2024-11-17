@@ -34,8 +34,10 @@ class StockDataDB:
         try:
             self.cursor.execute(insert_metadata)
             self.connection.commit()
-        except sqlite3.Error as _:
+        except sqlite3.IntegrityError as _:
             print(f"-db- Metadata for {isin} already exists in the database")
+        except sqlite3.Error as err:
+            print(err)
 
     def _create_absolutes_table_if_not_exists(self):
         create_absolutes_table = '''
@@ -63,8 +65,10 @@ class StockDataDB:
         try:
             self.cursor.execute(insert_absolutes)
             self.connection.commit()
-        except sqlite3.Error as _:
+        except sqlite3.IntegrityError as _:
             print(f"-db- Absolutes data for {isin} on {date} already exists in the database")
+        except sqlite3.Error as err:
+            print(err)
 
     def _create_ratios_table_if_not_exists(self):
         create_ratios_table = '''
@@ -84,22 +88,29 @@ class StockDataDB:
         self.cursor.execute(create_ratios_table)
         self.connection.commit()
 
-    def add_ratios(self, isin: str, date: str, beta: float, trailing_pe: float,
-                   forward_pe: float, price_to_book: float, trailing_eps: float,
-                   forward_eps: float, enterprise_to_revenue: float,
-                   enterprise_to_ebitda: float):
+    def add_ratios(self, isin: str, date: str, beta: float|None, trailing_pe: float|None,
+                   forward_pe: float|None, price_to_book: float|None, trailing_eps: float|None,
+                   forward_eps: float|None, enterprise_to_revenue: float|None,
+                   enterprise_to_ebitda: float|None):
         insert_ratios = f'''
             INSERT INTO RATIOS
             (isin, date, beta, trailingPE, forwardPE, priceToBook, trailingEps,
             forwardEps, enterpriseToRevenue, enterpriseToEbitda)
-            VALUES ('{isin}', '{date}', '{beta}', '{trailing_pe}', '{forward_pe}', 
-            '{price_to_book}', '{trailing_eps}', '{forward_eps}', '{enterprise_to_revenue}',
-            '{enterprise_to_ebitda}')'''
+            VALUES ('{isin}', '{date}', '{"NULL" if beta is None else beta}', 
+            '{"NULL" if trailing_pe is None else trailing_pe}', 
+            '{"NULL" if forward_pe is None else forward_pe}', 
+            '{"NULL" if price_to_book is None else price_to_book}', 
+            '{"NULL" if trailing_eps is None else trailing_eps}', 
+            '{"NULL" if forward_eps is None else forward_eps}', 
+            '{"NULL" if enterprise_to_revenue is None else enterprise_to_revenue}',
+            '{"NULL" if enterprise_to_ebitda is None else enterprise_to_ebitda}')'''
         try:
             self.cursor.execute(insert_ratios)
             self.connection.commit()
-        except sqlite3.Error as _:
+        except sqlite3.IntegrityError as _:
             print(f"-db- Ratios data for {isin} on {date} already exists in the database")
+        except sqlite3.Error as err:
+            print(err)
 
     def _create_events_table_if_not_exists(self):
         create_events_table = '''
@@ -120,5 +131,7 @@ class StockDataDB:
         try:
             self.cursor.execute(insert_events)
             self.connection.commit()
-        except sqlite3.Error as _:
+        except sqlite3.IntegrityError as _:
             print(f"-db- {event_type} events data for {isin} on {date} already exists in the database")
+        except sqlite3.Error as err:
+            print(err)
