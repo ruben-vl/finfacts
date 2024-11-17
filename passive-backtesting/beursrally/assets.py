@@ -2,7 +2,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import json
-from cookie import COOKIE
+from cookie import COOKIES
 
 
 class BeursrallyAssets:
@@ -42,7 +42,8 @@ class BeursrallyAssets:
         session.mount('http://', adapter)
         session.mount('https://', adapter)
 
-        data_response = session.get(cls.DATA_URL, cookies={"Cookie": COOKIE})
+        # data_response = session.get(cls.DATA_URL, cookies={"Cookie": COOKIE})
+        data_response = session.get(cls.DATA_URL, cookies=COOKIES)
         if data_response.status_code != 200:
             print(f"Something went wrong: status code {data_response.status_code}\n{data_response.text}")
         else:
