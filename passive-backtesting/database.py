@@ -26,14 +26,13 @@ class StockDataDB:
         self.connection.commit()
 
     def add_metadata(self, isin: str, symbol: str, name: str, currency: str,
-                     exchange: str, first_trade_date: datetime):
+                     exchange: str, first_trade_date: str):
 
-        first_trade_date_string = first_trade_date.strftime("%d_%m_%Y")
         insert_metadata = f'''
             INSERT INTO META
             (isin, symbol, name, currency, exchange, firstTradeDate)
             VALUES ('{isin}', '{symbol}', '{name}', '{currency}', '{exchange}', 
-            '{first_trade_date_string}')'''
+            '{first_trade_date}')'''
         try:
             self.cursor.execute(insert_metadata)
             self.connection.commit()
@@ -115,7 +114,7 @@ class StockDataDB:
         self.cursor.execute(create_events_table)
         self.connection.commit()
 
-    def add_events(self, isin: str, date: str, event_type: str):
+    def add_event(self, isin: str, date: str, event_type: str):
         insert_events = f'''
             INSERT INTO EVENTS
             (isin, date, eventType)

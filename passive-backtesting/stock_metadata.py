@@ -1,10 +1,12 @@
 import yfinance as yf
+from numpy.ma.extras import average
 from requests import Session
 from requests_cache import CacheMixin, SQLiteCache
 from requests_ratelimiter import LimiterMixin, MemoryQueueBucket
 from pyrate_limiter import Duration, RequestRate, Limiter
 
 from datetime import datetime
+from database import StockDataDB
 
 
 class CachedLimiterSession(CacheMixin, LimiterMixin, Session):
@@ -15,27 +17,58 @@ class StockMetadata:
 
     def __init__(self):
         self.session = CachedLimiterSession(
-            limiter=Limiter(RequestRate(1, Duration.SECOND*5)),
+            limiter=Limiter(RequestRate(1, Duration.SECOND * 5)),
             bucket_class=MemoryQueueBucket,
             backend=SQLiteCache("yfinance.cache")
         )
 
-    @classmethod
-    def _get_ex_dividend_date(cls, ticker: yf.ticker.Ticker):
-        return ticker.calendar['Ex-Dividend Date']
+    def store_metadata(self, isin: str):
+        date_string = datetime.today().strftime("%d_%m_%Y")
+        ticker = yf.Ticker(isin, session=self.session)
+        database = StockDataDB()
 
-    @classmethod
-    def _get_earnings_date(cls, ticker: yf.ticker.Ticker):
-        earnings_date = ticker.calendar['Earnings Date']
-        if len(earnings_date) == 1:
-            return earnings_date[0]
-        else:
-            print(f"More than 1 earnings date for ticker {ticker.isin}")
-            return earnings_date
+        info = ticker.info
+        calendar = ticker.calendar
+
+        database.add_metadata(isin=isin,
+                              symbol=info['symbol'],
+                              name=info['shortName'],
+                              currency=info['currency'],
+                              exchange=info['exchange'],
+                              first_trade_date=datetime.fromtimestamp(
+                                  info['firstTradeDateEpochUtc']).strftime("%d_%m_%Y"))
+
+        database.add_absolutes(isin = isin,
+                               date = date_string,
+                               market_cap = info['marketCap'],
+                               enterprise_value=info['enterpriseValue'],
+                               average_volume=info['averageVolume'],
+                               average_volume_10days=info['averageVolume10days'])
+
+        database.add_ratios(isin=isin,
+                            date=date_string,
+                            beta=info['beta'],
+                            trailing_pe=info['trailingPE'],
+                            forward_pe=info['forwardPE'],
+                            price_to_book=info['priceToBook'],
+                            trailing_eps=info['trailingEps'],
+                            forward_eps=info['forwardEps'],
+                            enterprise_to_revenue=info['enterpriseToRevenue'],
+                            enterprise_to_ebitda=info['enterpriseToEbitda'])
+
+        ex_dividend_date = calendar['Ex-Dividend Date']
+        database.add_event(isin=isin, date=ex_dividend_date.strftime("%d_%m_%Y"), event_type="Ex-Dividend")
+        earnings = calendar['Earnings Date']
+        for date in earnings:
+            database.add_event(isin=isin, date=date.strftime("%d_%m_%Y"), event_type="Earnings")
+
+
+
 
     @classmethod
     def _filtered_info(cls, ticker: yf.ticker.Ticker) -> dict:
         info = ticker.info
+        calendar = ticker.calendar
         return {
             'meta': {
                 'isin': ticker.isin,
@@ -60,9 +93,25 @@ class StockMetadata:
                 'forwardEps': info['forwardEps'],
                 'enterpriseToRevenue': info['enterpriseToRevenue'],
                 'enterpriseToEbitda': info['enterpriseToEbitda']
+            },
+            'events': {
+                'ex-dividend': calendar['Ex-Dividend Date'],
+                'earnings': calendar['Earnings Date']
             }
         }
 
+    @classmethod
+    def _get_ex_dividend_date(cls, ticker: yf.ticker.Ticker):
+        return ticker.calendar['Ex-Dividend Date']
+
+    @classmethod
+    def _get_earnings_date(cls, ticker: yf.ticker.Ticker):
+        earnings_date = ticker.calendar['Earnings Date']
+        if len(earnings_date) == 1:
+            return earnings_date[0]
+        else:
+            print(f"More than 1 earnings date for ticker {ticker.isin}")
+            return earnings_date
 
     @classmethod
     def _get_market_cap(cls, ticker: yf.ticker.Ticker):
@@ -131,22 +180,3 @@ class StockMetadata:
     @classmethod
     def _get_first_trade_date(cls, ticker: yf.ticker.Ticker):
         return ticker.info['firstTradeDateEpochUtc']
-
-
-    # def stock_meta(self):
-    #     ticker = yf.Ticker("BE0003555639", session=self.session)
-    #     info = ticker.info
-    #     for item in info.items():
-    #         print(item)
-    #     print(ticker.calendar)
-    #     # print(ticker.news)
-
-    # def get_stock_ages_months(self) -> list[tuple[str, int]]:
-    #     stock_isins = BeursrallyAssets.stock_isins()
-    #     print(stock_isins)
-    #
-    #     return []
-
-
-# if __name__ == "__main__":
-#     BeursrallyData().stock_meta()
