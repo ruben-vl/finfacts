@@ -11,7 +11,7 @@ class CachedLimiterSession(CacheMixin, LimiterMixin, Session):
     pass
 
 
-class StockData:
+class StockMetadata:
 
     def __init__(self):
         self.session = CachedLimiterSession(
