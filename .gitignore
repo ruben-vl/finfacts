@@ -12,6 +12,7 @@ yfinance.cache
 
 # Data Cache
 cache/
+finfacts.db
 
 # Beursrally
 cookies.json
