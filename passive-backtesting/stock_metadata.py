@@ -38,9 +38,9 @@ class StockMetadata:
                               first_trade_date=datetime.fromtimestamp(
                                   info['firstTradeDateEpochUtc']).strftime("%d_%m_%Y"))
 
-        database.add_absolutes(isin = isin,
-                               date = date_string,
-                               market_cap = info['marketCap'],
+        database.add_absolutes(isin=isin,
+                               date=date_string,
+                               market_cap=info['marketCap'],
                                enterprise_value=info['enterpriseValue'],
                                average_volume=info['averageVolume'],
                                average_volume_10days=info['averageVolume10days'])
@@ -61,9 +61,6 @@ class StockMetadata:
         earnings = calendar['Earnings Date']
         for date in earnings:
             database.add_event(isin=isin, date=date.strftime("%d_%m_%Y"), event_type="Earnings")
-
-
-
 
     @classmethod
     def _filtered_info(cls, ticker: yf.ticker.Ticker) -> dict:
