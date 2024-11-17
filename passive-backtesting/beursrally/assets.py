@@ -41,7 +41,6 @@ class BeursrallyAssets:
         session.mount('http://', adapter)
         session.mount('https://', adapter)
 
-        # data_response = session.get(cls.DATA_URL, cookies={"Cookie": COOKIE})
         with open('./cookies.json', 'r') as file:
             cookies = json.load(file)
         data_response = session.get(cls.DATA_URL, cookies=cookies["Request Cookies"])
