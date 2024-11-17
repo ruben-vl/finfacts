@@ -48,28 +48,33 @@ class StockMetadata:
 
         database.add_ratios(isin=isin,
                             date=date_string,
-                            beta=info['beta'],
-                            trailing_pe=info['trailingPE'],
-                            forward_pe=info['forwardPE'],
-                            price_to_book=info['priceToBook'],
-                            trailing_eps=info['trailingEps'],
-                            forward_eps=info['forwardEps'],
-                            enterprise_to_revenue=info['enterpriseToRevenue'],
-                            enterprise_to_ebitda=info['enterpriseToEbitda'])
+                            beta=info.get('beta',None),
+                            trailing_pe=info.get('trailingPE',None),
+                            forward_pe=info.get('forwardPE',None),
+                            price_to_book=info.get('priceToBook',None),
+                            trailing_eps=info.get('trailingEps',None),
+                            forward_eps=info.get('forwardEps',None),
+                            enterprise_to_revenue=info.get('enterpriseToRevenue',None),
+                            enterprise_to_ebitda=info.get('enterpriseToEbitda',None))
 
-        ex_dividend_date = calendar['Ex-Dividend Date']
-        database.add_event(isin=isin, date=ex_dividend_date.strftime("%d_%m_%Y"), event_type="Ex-Dividend")
-        dividend_date = calendar['Dividend Date']
-        database.add_event(isin=isin, date=dividend_date.strftime("%d_%m_%Y"), event_type="Dividend")
+        ex_dividend_date: datetime | None = calendar.get('Ex-Dividend Date',None)
+        if ex_dividend_date:
+            database.add_event(isin=isin, date=ex_dividend_date.strftime("%d_%m_%Y"), event_type="Ex-Dividend")
+        dividend_date: datetime | None = calendar.get('Dividend Date',None)
+        if dividend_date:
+            database.add_event(isin=isin, date=dividend_date.strftime("%d_%m_%Y"), event_type="Dividend")
 
-        earnings = calendar['Earnings Date']
-        for date in earnings:
-            database.add_event(isin=isin, date=date.strftime("%d_%m_%Y"), event_type="Earnings")
+        earnings: list[datetime] | None = calendar.get('Earnings Date',None)
+        if earnings:
+            for date in earnings:
+                database.add_event(isin=isin, date=date.strftime("%d_%m_%Y"), event_type="Earnings")
 
         for key in calendar.keys():
             if key not in {'Dividend Date', 'Ex-Dividend Date', 'Earnings Date', 'Earnings High', 'Earnings Low',
                            'Earnings Average', 'Revenue High', 'Revenue Low', 'Revenue Average'}:
                 print(f"Unknown key in calendar: {key}")
+
+        database.connection.close()
 
     @classmethod
     def _filtered_info(cls, ticker: yf.ticker.Ticker) -> dict:
