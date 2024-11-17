@@ -1,5 +1,5 @@
 import yfinance as yf
-from numpy.ma.extras import average
+
 from requests import Session
 from requests_cache import CacheMixin, SQLiteCache
 from requests_ratelimiter import LimiterMixin, MemoryQueueBucket
