@@ -10,7 +10,9 @@ class BeursrallyAssets:
     @classmethod
     def stock_isins(cls) -> list[str]:
         data = cls._load_data()
-        return list(data["Aandelen"].keys())
+        res = list(data["Aandelen"].keys())
+        res.remove("BE0974380124")
+        return res
 
     @classmethod
     def fund_isins(cls) -> list[str]:
