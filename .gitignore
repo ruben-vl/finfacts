@@ -14,7 +14,7 @@ yfinance.cache
 cache/
 
 # Beursrally
-cookie.py
+cookies.json
 assets_raw.json
 
 # PyCharm
