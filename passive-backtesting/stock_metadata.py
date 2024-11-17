@@ -33,7 +33,7 @@ class StockMetadata:
 
         database.add_metadata(isin=isin,
                               symbol=info['symbol'],
-                              name=info['shortName'],
+                              name=info['shortName'].replace("'", " "),
                               currency=info['currency'],
                               exchange=info['exchange'],
                               first_trade_date=datetime.fromtimestamp(
