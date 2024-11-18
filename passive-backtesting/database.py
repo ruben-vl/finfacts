@@ -1,4 +1,6 @@
 import sqlite3
+from datetime import datetime
+from functools import cmp_to_key
 
 class StockDataDB:
 
@@ -143,3 +145,28 @@ class StockDataDB:
                 print(f"-db- {event_type} events data for {isin} on {date} already exists in the database")
         except sqlite3.Error as err:
             print(err)
+
+    @classmethod
+    def _compare_on_date(cls, item1, item2):
+        date1 = datetime.strptime(item1[1], "%d_%m_%Y").strftime("%Y%m%d")
+        date2 = datetime.strptime(item2[1], "%d_%m_%Y").strftime("%Y%m%d")
+        if date1 < date2:
+            return -1
+        elif date1 > date2:
+            return 1
+        else:
+            return 0
+
+    def get_events_in_order(self):
+        get_all_events_ordered = '''SELECT * FROM EVENTS'''
+        res = self.cursor.execute(get_all_events_ordered)
+        rows = []
+        for row in res.fetchall():
+            rows.append(row)
+        return sorted(rows, key=cmp_to_key(self._compare_on_date))
+
+if __name__ == "__main__":
+    db = StockDataDB()
+    for e in db.get_events_in_order():
+        print(e)
+    db.connection.close()
