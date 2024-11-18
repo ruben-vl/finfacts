@@ -12,6 +12,10 @@ class BeursrallyAssets:
         data = cls._load_data()
         res = list(data["Aandelen"].keys())
         res.remove("BE0974380124")
+        res.remove("BE0974386188")
+        res.remove("FR0013447729")
+        res.remove("NL0013654809")
+        res.remove("NL00150002Q7")
         return res
 
     @classmethod
