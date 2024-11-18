@@ -2,7 +2,20 @@ import sqlite3
 from datetime import datetime
 from functools import cmp_to_key
 
+from typing import Union, Tuple
+
+
 class StockDataDB:
+    Metadata = tuple[str, str, str, str, str, str]
+    '''isin, symbol, name, currency, exchange, firstTradeDate'''
+
+    MaybeInt = int | None
+    Absolutes = tuple[str, str, MaybeInt, MaybeInt, MaybeInt, MaybeInt]
+    '''isin, date, marketCap, enterpriseValue, averageVolume, averageVolume10days'''
+
+    MaybeFloat = float | None
+    Ratios = tuple[
+        str, str, MaybeFloat, MaybeFloat, MaybeFloat, MaybeFloat, MaybeFloat, MaybeFloat, MaybeFloat, MaybeFloat]
 
     def __init__(self, verbose=False):
         self.connection = sqlite3.connect('finfacts.db')
@@ -43,6 +56,11 @@ class StockDataDB:
         except sqlite3.Error as err:
             print(err)
 
+    def get_metadata(self, isin: str) -> Metadata:
+        metadata_query = f'''SELECT isin, symbol, name, currency, exchange, firstTradeDate 
+                             FROM META WHERE isin = {isin}'''
+        return self.cursor.execute(metadata_query).fetchone()
+
     def _create_absolutes_table_if_not_exists(self):
         create_absolutes_table = '''
             CREATE TABLE IF NOT EXISTS ABSOLUTES (
@@ -57,9 +75,9 @@ class StockDataDB:
         self.cursor.execute(create_absolutes_table)
         self.connection.commit()
 
-    def add_absolutes(self, isin: str, date: str, market_cap: int|None,
-                      enterprise_value: int|None, average_volume: int|None,
-                      average_volume_10days: int|None):
+    def add_absolutes(self, isin: str, date: str, market_cap: int | None,
+                      enterprise_value: int | None, average_volume: int | None,
+                      average_volume_10days: int | None):
         insert_absolutes = f'''
             INSERT INTO ABSOLUTES
             (isin, date, marketCap, enterpriseValue, averageVolume, 
@@ -77,6 +95,12 @@ class StockDataDB:
                 print(f"-db- Absolutes data for {isin} on {date} already exists in the database")
         except sqlite3.Error as err:
             print(err)
+
+    def get_absolutes(self, isin: str) -> Absolutes:
+        absolutes_query = f'''SELECT isin, date, marketCap, enterpriseValue, averageVolume, averageVolume10days
+                             FROM ABSOLUTES WHERE isin = {isin}'''
+        results = self.cursor.execute(absolutes_query).fetchall()
+        return min(results, key=lambda tup: tup[1])
 
     def _create_ratios_table_if_not_exists(self):
         create_ratios_table = '''
@@ -96,10 +120,10 @@ class StockDataDB:
         self.cursor.execute(create_ratios_table)
         self.connection.commit()
 
-    def add_ratios(self, isin: str, date: str, beta: float|None, trailing_pe: float|None,
-                   forward_pe: float|None, price_to_book: float|None, trailing_eps: float|None,
-                   forward_eps: float|None, enterprise_to_revenue: float|None,
-                   enterprise_to_ebitda: float|None):
+    def add_ratios(self, isin: str, date: str, beta: float | None, trailing_pe: float | None,
+                   forward_pe: float | None, price_to_book: float | None, trailing_eps: float | None,
+                   forward_eps: float | None, enterprise_to_revenue: float | None,
+                   enterprise_to_ebitda: float | None):
         insert_ratios = f'''
             INSERT INTO RATIOS
             (isin, date, beta, trailingPE, forwardPE, priceToBook, trailingEps,
@@ -120,6 +144,13 @@ class StockDataDB:
                 print(f"-db- Ratios data for {isin} on {date} already exists in the database")
         except sqlite3.Error as err:
             print(err)
+
+    def get_ratios(self, isin: str) -> Ratios:
+        ratios_query = f'''SELECT isin, date, beta, trailingPE, forwardPE, priceToBook, trailingEps, forwardEps, 
+                                  enterpriseToRevenue, enterpriseToEbitda
+                           FROM RATIOS WHERE isin = {isin}'''
+        results = self.cursor.execute(ratios_query).fetchall()
+        return min(results, key=lambda tup: tup[1])
 
     def _create_events_table_if_not_exists(self):
         create_events_table = '''
@@ -164,6 +195,7 @@ class StockDataDB:
         for row in res.fetchall():
             rows.append(row)
         return sorted(rows, key=cmp_to_key(self._compare_on_date))
+
 
 if __name__ == "__main__":
     db = StockDataDB()
